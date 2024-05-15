@@ -5,7 +5,8 @@ npm install -g json-server
 ```
 
 Power Shell commands throws error then
-```Get-ExecutionPolicy
+```
+Get-ExecutionPolicy
 Set-ExecutionPolicy RemoteSigned
 ```
 or
