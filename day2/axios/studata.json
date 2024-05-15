@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Lokesh",
+      "branch": "CSDS"
+    },
+    {
+      "id": "2",
+      "name": "Anil",
+      "branch": "CSIT"
+    },
+    {
+      "id": "3",
+      "name": "Adhi",
+      "branch": "CSIT"
+    },
+    {
+      "id": "4",
+      "name": "Abhi",
+      "branch": "Mech"
+    }
+    
+  ]
+}
