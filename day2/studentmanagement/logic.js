@@ -85,7 +85,8 @@ async function editData(id,name,branch){
             button.style.display = 'none';
             
             var edit = document.getElementById('editButton');
-
+            
+            del(id);
             // Add an event listener to the button
             edit.addEventListener('click',async function() {
                 
@@ -93,12 +94,13 @@ async function editData(id,name,branch){
             r=document.getElementById('rno').value;
             n=document.getElementById('name').value;
             b=document.getElementById('branch').value;
-
+            
             const obj={
                 id:r,
                 name:n,
                 branch:b
             }
+            
             const res = await fetch(`http://localhost:3000/users`, {
             method: "PATCH",
             
@@ -106,8 +108,9 @@ async function editData(id,name,branch){
         });
 
 
-                    
+        
                     });
+                    
 
-            
+                    
 }
