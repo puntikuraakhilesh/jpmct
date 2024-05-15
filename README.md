@@ -1,7 +1,7 @@
 ### `npm install axios`
 ### `npm install -g json-server`
 
-# Power Shell commands if not working
+##Power Shell commands if not working
 ### `Get-ExecutionPolicy`
 ### `Set-ExecutionPolicy RemoteSigned`
 ## or
