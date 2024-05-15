@@ -9,7 +9,8 @@ Power Shell commands throws error then
 Set-ExecutionPolicy RemoteSigned
 ```
 or
-```Set-ExecutionPolicy Unrestricted
+```
+Set-ExecutionPolicy Unrestricted
 ```
 
 
