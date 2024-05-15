@@ -8,7 +8,12 @@
     {
       "id": "2",
       "name": "Adhi",
-      "branch": "ITfs"
+      "branch": "CSE"
+    },
+    {
+      "id": "3",
+      "name": "Akhilesh",
+      "branch": "IT"
     }
   ]
 }
