@@ -7,13 +7,8 @@
     },
     {
       "id": "2",
-      "name": "Adhi",
-      "branch": "CSE"
-    },
-    {
-      "id": "3",
-      "name": "Akhilesh",
-      "branch": "IT"
+      "name": "Lokesh",
+      "branch": "CSIT"
     }
   ]
 }

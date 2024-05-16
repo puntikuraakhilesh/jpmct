@@ -3,26 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Student Management</title>
     <style>
-        .material-symbols-outlined {
-        font-variation-settings:
-        'FILL' 0,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 24
+        /* Styling for the form container */
+        #stuform {
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .material-symbols-outlined {
-            font-variation-settings:
-            'FILL' 0,
-            'wght' 400,
-            'GRAD' 0,
-            'opsz' 24
-            }
 
-        </style>
+        /* Styling for form inputs */
+        #stuform input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        /* Styling for submit button */
+        #stuform input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Styling for submit button on hover */
+        #stuform input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        /* Styling for table */
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        /* Styling for table header */
+        th {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+        }
+
+        /* Styling for table data */
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Styling for table row on hover */
+        tr:hover {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 <body onload="fetchData()">
     <h1 align="center">Student Management</h1>
@@ -31,18 +74,13 @@
         <input placeholder="Name" type="text" id="name">
         <input placeholder="Branch" type="text" id="branch">
         <input type="submit" value="Add" id="Add">
-        
-        
     </form>
-    <table width="100%"align="center" border="2px">
+    <table width="100%" align="center" border="2px">
         <th>RollNo</th>
         <th>Name</th>
         <th>Branch</th>
         <th>Opertations</th>
-        <tbody id="tablebody">
-
-        </tbody>
-
+        <tbody id="tablebody"></tbody>
     </table>
     <script src="./logic.js"></script>
 </body>
