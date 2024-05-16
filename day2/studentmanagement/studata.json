@@ -3,12 +3,12 @@
     {
       "id": "1",
       "name": "Abhi",
-      "branch": "CSIT"
+      "branch": "CSE"
     },
     {
       "id": "2",
       "name": "Lokesh",
-      "branch": "CSIT"
+      "branch": "CSE"
     }
   ]
 }

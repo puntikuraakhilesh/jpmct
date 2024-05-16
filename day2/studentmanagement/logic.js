@@ -62,55 +62,23 @@ async function del(id) {
         
 }
 
-async function editData(id,name,branch){
+async function editData(id) {
+    const fetch = await axios.get(`http://localhost:3000/users/${id}`);
+    const student = fetch.data;
+
+    document.getElementById('rno').value = student.id;
+    document.getElementById('name').value = student.name;
+    document.getElementById('branch').value = student.branch;
     
-    
-    
-            var r= document.getElementById('rno');
-            r.value = id;
-            var n=document.getElementById('name');
-            n.value=name;
-            var b=document.getElementById('branch');
-            b.value=branch;
 
+    document.getElementById('stuform').onsubmit = async function(event) {
+        event.preventDefault();
 
-            const a = document.createElement('button');
-            const ab = document.getElementById('stuform');
-            a.textContent = "EDIT"; 
-            a.setAttribute("name", "editButton"); 
-            ab.appendChild(a);
-            var button = document.getElementById('Add');
-
-
-            button.style.display = 'none';
-            
-            var edit = document.getElementById('editButton');
-            
-            del(id);
-            // Add an event listener to the button
-            edit.addEventListener('click',async function() {
-                
-    // Code to execute when the button is clicked
-            r=document.getElementById('rno').value;
-            n=document.getElementById('name').value;
-            b=document.getElementById('branch').value;
-            
-            const obj={
-                id:r,
-                name:n,
-                branch:b
-            }
-            
-            const res = await fetch(`http://localhost:3000/users`, {
-            method: "PATCH",
-            
-            body: JSON.stringify(data)
+        await axios.patch(`http://localhost:3000/users/${id}`, {
+            "id": document.getElementById('rno').value,
+            "name": document.getElementById('name').value,
+            "branch": document.getElementById('branch').value,
         });
-
-
-        
-                    });
-                    
-
-                    
+        fetchData();
+    };
 }
